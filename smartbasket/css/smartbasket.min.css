@@ -26,7 +26,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2
+    z-index: 10000;
 }
 
 @media (max-width:1030px) {
@@ -324,6 +324,7 @@
 
 .smart-basket__info-msgs {
     position: absolute;
+    border-radius: 8px;
     top: 36px;
     width: 100%;
     max-width: 320px;
@@ -568,7 +569,7 @@
 }
 
 .smart-basket__empty-title {
-    color: #e94e3c
+    color: #383127;
 }
 
 .smart-basket__success-title {
@@ -605,15 +606,21 @@
 }
 
 .smart-basket__send-form {
-    background: #1bbc9b;
+    background: #339c44;
     border: none;
     padding: 15px 25px;
     color: #fff;
     font-size: 16px;
     -webkit-appearance: none;
     cursor: pointer;
-    border-radius: 3px
+    border-radius: 8px;
+    transition: 0.3s ease all;
 }
+
+.smart-basket__send-form:hover {
+   background: #287b35; 
+}
+
 
 @media (max-width:600px) {
     .smart-basket__send-form {
@@ -630,8 +637,14 @@
     font-size: 16px;
     -webkit-appearance: none;
     cursor: pointer;
-    border-radius: 3px;
+    transition: 0.3s ease all;
+    border-radius: 8px;
     margin-right: 30px
+}
+
+.smart-basket__close-form:hover {
+    background: #0a76c0;
+   
 }
 
 @media (max-width:600px) {
@@ -679,6 +692,7 @@
 
 .smart-basket__alert-wrapper {
     position: fixed;
+    z-index: 10000;
     top: 0;
     left: 0;
     right: 0;
@@ -699,6 +713,7 @@
 
 .smart-basket__alert {
     width: 100%;
+    border-radius: 8px;
     max-width: 480px;
     background: #fff;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .28);
@@ -774,12 +789,16 @@
     -webkit-appearance: none;
     font-size: 16px;
     color: #fff;
-    cursor: pointer
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 .smart-basket__alert-button_close {
     background: #3598dc;
-    width: 48%
+    width: 48%;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+
 }
 
 .smart-basket__alert-button_close:hover {
@@ -794,12 +813,13 @@
 }
 
 .smart-basket__alert-button_by {
-    background: #1bbc9b;
-    width: 48%
+    background: #339c44;
+    width: 48%;
+    
 }
 
 .smart-basket__alert-button_by:hover {
-    background: #0faf8e
+    background: #287b35;
 }
 
 @media (max-width:450px) {
