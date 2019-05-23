@@ -25,6 +25,8 @@ td {
   padding: 0;
 }
 
+
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -512,6 +514,7 @@ a {
 }
 
 .btn-wrap_result {
+  cursor: pointer;
   margin: 20px 0 10px;
   text-align: center;
 }
@@ -588,16 +591,17 @@ a {
 }
 
 .btn_act {
-  padding: 16px 0;
+  padding: 16px 0 !important;
+  font-size: 15px;
   width: 100%;
-  color: #f3f3f3;
-  border: 2px solid #f3f3f3;
-  background: transparent;
+  color: #f3f3f3 !important;
+  border: 2px solid #f3f3f3 !important;
+  background: transparent !important;
 }
 
 .btn_act:hover {
-  color: #383127;
-  background: #f3f3f3;
+  color: #383127 !important;
+  background: #f3f3f3 !important;
 }
 
 .btn_consult {
@@ -1138,8 +1142,8 @@ a {
   display: inline-block;
   border: 2px solid #f0f0ef;
   background: transparent;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -1238,6 +1242,8 @@ a {
   display: block;
 }
 
+
+
 .devices-card__img-wrap img {
   display: inline-block;
   padding: 5px;
@@ -1264,6 +1270,12 @@ a {
   padding: 25px;
   letter-spacing: 0.2px;
   line-height: 20px;
+}
+
+.ruble {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 .devices-card__list {
@@ -1314,6 +1326,7 @@ a {
 }
 
 .product__add-to-cart-button {
+  cursor: pointer;
   border: 0;
   display: inline-block;
   text-align: center;
@@ -1481,21 +1494,6 @@ a {
   display: block;
 }
 
-#btn__quiz {
-  
-    padding: 16px 0;
-    width: 100%;
-    color: #f3f3f3;
-    border: 2px solid #f3f3f3;
-    background: transparent;
-  
-}
-
-#btn_quiz:hover {
-    color: #383127;
-    background: #f3f3f3;
-  
-}
 
 .comments {
   background: #eaf2f1;
@@ -1562,14 +1560,14 @@ a {
 }
 
 .comments-card__title {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 25px;
 }
 
 .comments-card__avatar {
-  margin-left: 25px;
+  margin-left: 14px;
 }
 
 .comments-card__review {
@@ -1625,7 +1623,7 @@ a {
   width: 300px;
   text-align: center;
   left: 50%;
-  bottom: -40px;
+  bottom: -48px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1641,8 +1639,8 @@ a {
   display: inline-block;
   border: 2px solid #383127;
   background: transparent;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -2486,6 +2484,7 @@ a {
   }
 
   .btn-wrap_quiz {
+    
     margin-bottom: 20px;
   }
 
@@ -2807,7 +2806,7 @@ a {
   }
 
   .quiz-card-wrap {
-    margin-left: 100px;
+    margin-left: 40%;
   }
 
   .quiz-card-wrap {
@@ -2829,6 +2828,10 @@ a {
 
   .quiz-answer {
     padding: 30px;
+  }
+
+  #buttonLeq {
+    margin-top: 2px;
   }
 
   .comments-slider-arrow-next {
@@ -2866,6 +2869,7 @@ a {
 
   .comments-card__title {
     font-size: 15px;
+    margin-right: 7px;
   }
 
   .comments-card__avatar {
