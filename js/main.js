@@ -14,11 +14,15 @@ $(document).ready(function () {
 			// $( '.shop-feature-wrap_device').slideToggle().css("display", "flex");
 			$('.shop-feature-wrap_device').css("display", "flex");
 			$('.shop').css("margin-bottom", "0");
+			
 		},
 		function () {
 			// $( '.shop-feature-wrap_device').slideToggle();
 			$('.shop-feature-wrap_device').css("display", "none");
-			$('.shop').css("margin-bottom", "135px");
+			$('.shop').css("margin-bottom", "105px");
+			if(window.matchMedia('(max-width: 768px)').matches){
+				$('.shop').css("margin-bottom", "20px");
+			}
 		});
 	$('.shop-wrap_liquids').hover(
 		function () {
@@ -29,7 +33,10 @@ $(document).ready(function () {
 		function () {
 			// $( '.shop-feature-wrap_liquids').slideToggle();
 			$('.shop-feature-wrap_liquids').css("display", "none");
-			$('.shop').css("margin-bottom", "135px");
+			$('.shop').css("margin-bottom", "105px");
+			if(window.matchMedia('(max-width: 768px)').matches){
+				$('.shop').css("margin-bottom", "20px");
+			}
 		});
 	$('.devices-slider').slick({
 		slidesToShow: 1,
@@ -66,48 +73,77 @@ $(document).ready(function () {
 		$('#hmt').trigger('click');
 	});
 
-	// if($('#dont-smoke:radio:checked')) {
-	// 	$('#btn_result').click(function () {
-	// 		$('.quiz-answer#quiz-dont-smoke').show();
-	// 	});
-	// }
-	// if($('#light:radio:checked')) {
-	// 	$('#btn_result').click(function () {
-	// 		$('.quiz-answer#quiz-light').show();
-	// 	});
-	// }
-	// if($('#medium:radio:checked')) {
-	// 	$('#btn_result').click(function () {
-	// 		$('.quiz-answer#quiz-medium').show();
-	// 	});
-	// }
-	$('input[name=quiz-radio]').change(function () {
-		const val = $(this).val();
-		if ($(this).val(val)) {
-			$('#btn_result').click(function () {
-				$('#quiz-' + val).css('display', 'flex');
-			});
-			$('.btn_answer').click(function () {
-				$('#quiz-' + val).css('display', 'none');
-			});
+
+	$('#btn_result').click(function () {
+		var value = $('input[name=quiz-radio]:checked').val();
+
+		if (!!value) {
+			$('#quiz-' + value).css('display', 'flex');
 		}
+
+
 	});
- 
+	$('.btn_answer').click(function () {
+		$('.quiz-answer').css('display', 'none');
+	});
+
+
 	
 
 
-	// if($('#hard:checked')) {
-	// 	$('#btn_result').click(function () {
-	// 		$('#quiz-hard').show();
-	// 	});
-	// }
-	// if($('#dont-know:checked')) {
-	// 	$('#btn_result').click(function () {
-	// 		$('#quiz-dont-know').show();
-	// 	});
-	// }
+	//Логика калькулятора выгоды
+	$('#calcStart').click(function () {
+		$('#mask').fadeIn(200);
+		document.body.style.overflow = 'hidden'; //показываем всплывающее окно
+		$('#calc-popup1').css('display', 'flex');
 
-	// $('a#close').click(function () {
-	// 	$('#mfp-bg').hide();
-	// });
+
+	});
+	$('#mask, .btn_sale').click(function () {
+		$('#calc-popup1, #calc-popup2, #result-calc1, .calc-popupFinal, #mask').fadeOut(200);
+		document.body.style.overflow = 'visible'; //скрываем всплывающее окно
+	});
+	$('#firstStep').click(function () {
+		var value = $('input[name=calc-popup-price]:checked').val(); //Записываем выбранный вариант
+		if (value) {
+			$('#calc-popup1').css('display', 'none');
+			$('#calc-popup2').css('display', 'flex');
+		}
+		$('#secondStep').click(function () {
+
+			var value1 = $('input[name=calc-popup-pack]:checked').val(); //записываем выбранный вариант
+
+			if (value == "1" && value1 == "4") {
+				$('#result-calc1').css('display', 'flex');
+			}
+			if (value == "1" && value1 == "5") {
+				$('#result-calc2').css('display', 'flex');
+			}
+			if (value == "1" && value1 == "6") {
+				$('#result-calc3').css('display', 'flex');
+			}
+			if (value == "2" && value1 == "4") {
+				$('#result-calc4').css('display', 'flex');
+			}
+			if (value == "2" && value1 == "5") {
+				$('#result-calc5').css('display', 'flex');
+			}
+			if (value == "2" && value1 == "6") {
+				$('#result-calc6').css('display', 'flex');
+			}
+			if (value == "3" && value1 == "4") {
+				$('#result-calc7').css('display', 'flex');
+			}
+			if (value == "4" && value1 == "5") {
+				$('#result-calc8').css('display', 'flex');
+			}
+			if (value == "3" && value1 == "6") {
+				$('#result-calc9').css('display', 'flex');
+			}
+		})
+	})
+
+	
+
+	
 });
