@@ -4,6 +4,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="img/logo_s_psom.png" type="image/png">
 	<title>Новый Черчилль</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -13,6 +14,7 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="./smartbasket/css/smartbasket.min.css">
+
 </head>
 
 <body>
@@ -64,9 +66,9 @@
 
 						<div class="navbar__basket navbar-basket">
 
-						<div class="header__basket-min">
+							<div class="header__basket-min">
 
-						</div>
+							</div>
 
 						</div>
 					</nav>
@@ -904,7 +906,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="btn-wrap" >
+			<div class="btn-wrap">
 				<a href="#devices" class="btn_try btn" id="btnForYou" data-target="anchor">
 					Попробовать
 				</a>
@@ -1145,20 +1147,19 @@
 		</div>
 	</section>
 	<section id="contacts" class="contacts">
-		<script type="text/javascript" charset="utf-8" async
-			src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad20f5fdd3e2c61ee5156f04831e1c6ba06ce6e3eac892c0406274a1e7dfb63a3&amp;width=100%25&amp;height=670&amp;lang=ru_RU&amp;scroll=false">
-		</script>
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7a3d325b8eed28d3a80fea864222bc349d921619087816cb04b39b2cad673328&amp;width=100%25&amp;height=670&amp;lang=ru_RU&amp;scroll=false"></script>
 		<input type="checkbox" id="hmtf" class="form-hidden">
 		<label for="hmtf" class="form-btn"></label>
-		<form class="contact-form">
+		<form action="" name="form-1" class="contact-form">
 			<legend class="contact-form__title">Связаться с нами</legend>
 			<label for="" class="contact-form__label">Как Вас зовут?</label>
-			<input class="contact-form__input" type="text" placeholder="Иван Петров" required>
-			<label for="" class="contact-form__label">Ваш телефон</label>
-			<input class="contact-form__input" type="number" placeholder="+7 (___) ___ - __ - __" required>
+			<input class="contact-form__input name" name="name" type="text" placeholder="Иван Петров">
+			<label for="" class="contact-form__label tell" name="tell" type="text">Ваш телефон</label>
+			<input class="contact-form__input mail" name="mail" type="number" placeholder="+7 (___) ___ - __ - __"
+				required>
 			<label for="" class="contact-form__label">Ваш E-mail</label>
 			<input class="contact-form__input" type="email" placeholder="example@email.com" required>
-			<button class="contact-form__btn btn open-popup-link" href="request-popup">Отправить заявку</button>
+			<button class="contact-form__btn btn feedback" name="send" type="button">Отправить заявку</button>
 		</form>
 	</section>
 	<footer id="footer" class="footer">
