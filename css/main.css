@@ -1225,7 +1225,13 @@ a {
   transform: scale(1);
 }
 
-.devices-card {
+#juul,
+#edge,
+#zero {
+  
+}
+
+.dcard {
   background: #f0f0ef;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1234,6 +1240,7 @@ a {
   border-radius: 5px;
   margin: 0 auto;
 }
+
 
 .devices-card__img {
   padding-top: 50px;
@@ -1765,6 +1772,7 @@ a {
   background: #fdfdfd;
   padding: 25px;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 .garant-card__title {
@@ -2778,16 +2786,15 @@ a {
     order: 3;
   }
 
-  .devices-card {
-    -webkit-box-orient: vertical;
+  .dcard{
+     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .devices-card {
+    flex-direction: column; 
     max-width: 340px;
   }
+  
+ 
 
   .devices-card__img {
     border-bottom: 1px solid #323232;
@@ -2995,6 +3002,7 @@ a {
   .garant-card {
     margin-left: 15px;
     margin-right: 15px;
+
   }
 
   .garant-card {
@@ -3105,7 +3113,7 @@ a {
 .calc-popupSecond,
 .calc-popupFinal {
     height: 370px;
-    top: 18%;
+    top: 8%;
   }
 
 .calc-popupFirst,

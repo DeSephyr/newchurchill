@@ -245,6 +245,7 @@
 					Прямо сейчас
 				</div>
 			</div>
+		
 			<div class="shop">
 				<div class="shop-wrap shop-wrap_device">
 					<img src="img/device.jpg" alt="" class="shop__img">
@@ -473,7 +474,7 @@
 		<div class="devices-slider-wrap">
 			<div class="devices-slider">
 				<div class="devices-slider-item">
-					<div class="devices-card">
+					<div class="devices-card dcard">
 						<div class="devices-card__img">
 							<img src="img/juulSlider.png" alt="" class="devices-card__main-img">
 							<div class="devices-card__img-wrap">
@@ -503,6 +504,8 @@
 								<div class="devices-card__price">
 									1750<span class="ruble">₽</span>
 								</div>
+								<div class="product__quantity"></div>
+						
 								<button class="product__add-to-cart-button" data-sb-id-or-vendor-code="000001"
 									data-sb-product-size="32" data-sb-product-name="Juul" data-sb-product-price="1850"
 									data-sb-product-quantity="1" data-sb-product-img="img/juulBasket.png">
@@ -514,7 +517,7 @@
 					</div>
 				</div>
 				<div class="devices-slider-item">
-					<div class="devices-card">
+					<div class="devices-card dcard">
 						<div class="devices-card__img">
 							<img src="img/slider-main.png" alt="" class="devices-card__main-img">
 							<div class="devices-card__img-wrap">
@@ -543,6 +546,7 @@
 								<div class="devices-card__price">
 									2000<span class="ruble">₽</span>
 								</div>
+								<div class="product__quantity"></div>
 								<button class="product__add-to-cart-button" data-sb-id-or-vendor-code="000002"
 									data-sb-product-size="32" data-sb-product-name="Suorin Edge"
 									data-sb-product-price="2000" data-sb-product-quantity="1"
@@ -555,7 +559,7 @@
 					</div>
 				</div>
 				<div class="devices-slider-item">
-					<div class="devices-card">
+					<div class="devices-card dcard">
 						<div class="devices-card__img">
 							<img src="img/ZeroSlider.png" alt="" class="devices-card__main-img">
 							<div class="devices-card__img-wrap">
@@ -584,6 +588,7 @@
 								<div class="devices-card__price">
 									1700<span class="ruble">₽</span>
 								</div>
+								<div class="product__quantity"></div>
 								<button class="product__add-to-cart-button" data-sb-id-or-vendor-code="000003"
 									data-sb-product-size="32" data-sb-product-name="Vaporesso Zero"
 									data-sb-product-price="1700" data-sb-product-quantity="1"
@@ -611,6 +616,7 @@
 	</section>
 	<section id="quiz" class="quiz">
 		<div class="wrapper">
+				<div class="devices-card" id="quizCard">
 			<div class="section-title section-title_white">
 				<h2 class="section-title__title">
 					Какую жидкость
@@ -725,12 +731,14 @@
 					</a>
 				</div>
 				<div class="btn-wrap_quiz">
+					
+					<div class="product__quantity"></div>
 					<button class="btn_act btn product__add-to-cart-button" id="buttonLeq"
 						data-sb-id-or-vendor-code="000004" data-sb-product-size="32" data-sb-product-name="Жидкость"
 						data-sb-product-price="600" data-sb-product-quantity="1"
 						data-sb-product-img="img/lequidBasket.png">
 						</i> Добавить в корзину
-					</button>
+					</button> </div>
 					<!-- <a href="#" class="btn_act btn">
 						Добавить в корзину
 					</a> -->
@@ -1147,7 +1155,9 @@
 		</div>
 	</section>
 	<section id="contacts" class="contacts">
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7a3d325b8eed28d3a80fea864222bc349d921619087816cb04b39b2cad673328&amp;width=100%25&amp;height=670&amp;lang=ru_RU&amp;scroll=false"></script>
+		<script type="text/javascript" charset="utf-8" async
+			src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7a3d325b8eed28d3a80fea864222bc349d921619087816cb04b39b2cad673328&amp;width=100%25&amp;height=670&amp;lang=ru_RU&amp;scroll=false">
+		</script>
 		<input type="checkbox" id="hmtf" class="form-hidden">
 		<label for="hmtf" class="form-btn"></label>
 		<form action="" name="form-1" class="contact-form">
@@ -1178,8 +1188,8 @@
 				<a href="tel:+74012454545" class="footer__phone-link"><i class="fas fa-phone footer__icon_rotate"></i>
 					+7 (4012) 45-45-45</a>
 				<div class="social">
-					<a href="#"><i class="fab fa-vk footer__icon"></i></a>
-					<a href="#"><i class="fab fa-instagram footer__icon"></i></a>
+					<a href="https://vk.com/new_churchill" target="_blank"><i class="fab fa-vk footer__icon"></i></a>
+					<a href="https://www.instagram.com/new_churchill/" target="_blank"><i class="fab fa-instagram footer__icon"></i></a>
 				</div>
 			</div>
 		</div>
@@ -1247,6 +1257,7 @@
 	</div>
 
 	<div class="smart-basket__wrapper"></div>
+	
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="./smartbasket/smartbasket.min.js"></script>
 	<script>
@@ -1260,12 +1271,17 @@
 				smartBasketCurrency: '₽',
 				smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
 				smartBasketMinText: 'Оформить заказ   ',
+				productQuantityWrapper:'product__quantity',
 			});
 		});
 	</script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="libs/arcticmodal/jquery.arcticmodal.js"></script>
+	<link rel="stylesheet" href="libs/arcticmodal/jquery.arcticmodal.css">
+	<link rel="stylesheet" href="libs/arcticmodal/themes/simple.css">
+
 </body>
 
 </html>

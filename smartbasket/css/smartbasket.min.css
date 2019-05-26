@@ -16,6 +16,11 @@
     overflow-y: scroll;
     transition: .8s
 }
+.product__quantity {
+    display: none;
+}
+
+
 
 .smart-basket_active {
     transition: .8s;

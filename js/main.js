@@ -100,11 +100,12 @@ $(document).ready(function () {
 
 	});
 	$('#mask, .btn_sale').click(function () {
-		$('#calc-popup1, #calc-popup2, #result-calc1, .calc-popupFinal, #mask').fadeOut(200);
+		$('#calc-popup1, #calc-popup2, .calc-popupFinal, #mask').fadeOut(200);
 		document.body.style.overflow = 'visible'; //скрываем всплывающее окно
 	});
 	$('#firstStep').click(function () {
-		var value = $('input[name=calc-popup-price]:checked').val(); //Записываем выбранный вариант
+		var value = $('input[name=calc-popup-price]:checked').val(); 
+		//Записываем выбранный вариант
 		if (value) {
 			$('#calc-popup1').css('display', 'none');
 			$('#calc-popup2').css('display', 'flex');
@@ -112,33 +113,105 @@ $(document).ready(function () {
 		$('#secondStep').click(function () {
 
 			var value1 = $('input[name=calc-popup-pack]:checked').val(); //записываем выбранный вариант
-
+			
 			if (value == "1" && value1 == "4") {
 				$('#result-calc1').css('display', 'flex');
+				$('#result-calc2').css('display', 'none');
+				$('#result-calc3').css('display', 'none');
+				$('#result-calc4').css('display', 'none');
+				$('#result-calc5').css('display', 'none');
+				$('#result-calc6').css('display', 'none');
+				$('#result-calc7').css('display', 'none');
+				$('#result-calc8').css('display', 'none');
+				$('#result-calc9').css('display', 'none');
 			}
 			if (value == "1" && value1 == "5") {
 				$('#result-calc2').css('display', 'flex');
+				$('#result-calc1').css('display', 'none');
+				$('#result-calc3').css('display', 'none');
+				$('#result-calc4').css('display', 'none');
+				$('#result-calc5').css('display', 'none');
+				$('#result-calc6').css('display', 'none');
+				$('#result-calc7').css('display', 'none');
+				$('#result-calc8').css('display', 'none');
+				$('#result-calc9').css('display', 'none');
 			}
 			if (value == "1" && value1 == "6") {
 				$('#result-calc3').css('display', 'flex');
+				$('#result-calc2').css('display', 'none');
+				$('#result-calc1').css('display', 'none');
+				$('#result-calc4').css('display', 'none');
+				$('#result-calc5').css('display', 'none');
+				$('#result-calc6').css('display', 'none');
+				$('#result-calc7').css('display', 'none');
+				$('#result-calc8').css('display', 'none');
+				$('#result-calc9').css('display', 'none');
 			}
 			if (value == "2" && value1 == "4") {
 				$('#result-calc4').css('display', 'flex');
+				$('#result-calc3').css('display', 'none');
+				$('#result-calc2').css('display', 'none');
+				$('#result-calc1').css('display', 'none');
+				$('#result-calc5').css('display', 'none');
+				$('#result-calc6').css('display', 'none');
+				$('#result-calc7').css('display', 'none');
+				$('#result-calc8').css('display', 'none');
+				$('#result-calc9').css('display', 'none');
 			}
 			if (value == "2" && value1 == "5") {
 				$('#result-calc5').css('display', 'flex');
+				$('#result-calc4').css('display', 'none');
+				$('#result-calc3').css('display', 'none');
+				$('#result-calc2').css('display', 'none');
+				$('#result-calc1').css('display', 'none');
+				$('#result-calc6').css('display', 'none');
+				$('#result-calc7').css('display', 'none');
+				$('#result-calc8').css('display', 'none');
+				$('#result-calc9').css('display', 'none');
 			}
 			if (value == "2" && value1 == "6") {
 				$('#result-calc6').css('display', 'flex');
+				$('#result-calc5').css('display', 'none');
+				$('#result-calc4').css('display', 'none');
+				$('#result-calc3').css('display', 'none');
+				$('#result-calc2').css('display', 'none');
+				$('#result-calc1').css('display', 'none');
+				$('#result-calc7').css('display', 'none');
+				$('#result-calc8').css('display', 'none');
+				$('#result-calc9').css('display', 'none');
 			}
 			if (value == "3" && value1 == "4") {
 				$('#result-calc7').css('display', 'flex');
+				$('#result-calc6').css('display', 'none');
+				$('#result-calc5').css('display', 'none');
+				$('#result-calc4').css('display', 'none');
+				$('#result-calc3').css('display', 'none');
+				$('#result-calc2').css('display', 'none');
+				$('#result-calc1').css('display', 'none');
+				$('#result-calc8').css('display', 'none');
+				$('#result-calc9').css('display', 'none');
 			}
 			if (value == "4" && value1 == "5") {
 				$('#result-calc8').css('display', 'flex');
+				$('#result-calc7').css('display', 'none');
+				$('#result-calc6').css('display', 'none');
+				$('#result-calc5').css('display', 'none');
+				$('#result-calc4').css('display', 'none');
+				$('#result-calc3').css('display', 'none');
+				$('#result-calc2').css('display', 'none');
+				$('#result-calc1').css('display', 'none');
+				$('#result-calc9').css('display', 'none');
 			}
 			if (value == "3" && value1 == "6") {
 				$('#result-calc9').css('display', 'flex');
+				$('#result-calc8').css('display', 'none');
+				$('#result-calc7').css('display', 'none');
+				$('#result-calc6').css('display', 'none');
+				$('#result-calc5').css('display', 'none');
+				$('#result-calc4').css('display', 'none');
+				$('#result-calc3').css('display', 'none');
+				$('#result-calc2').css('display', 'none');
+				$('#result-calc1').css('display', 'none');
 			}
 		})
 	})
