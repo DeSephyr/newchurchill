@@ -2981,7 +2981,7 @@ a {
   }
 
   .comments-card__avatar {
-    
+    margin: 0 auto;
     padding-left: 12px;
   }
 
