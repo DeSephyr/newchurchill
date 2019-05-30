@@ -171,13 +171,11 @@ a {
 
 .header {
   padding-top: 50px;
-  background: url(../img/backgroundOffer.png) no-repeat ;
-  background-position: 65% 0%;
-  padding-bottom: 75px;  
+  background: url(../img/backgroundOffer.png) no-repeat fixed center top;
+  padding-bottom: 75px;
+  background-size: cover;
   position: relative;
 }
- 
-
 
 .navbar-wrap {
   position: fixed;
@@ -690,7 +688,7 @@ a {
 
 
 .features {
-  background: url(../img/SmokeBG.png) no-repeat;
+  background: url(../img/SmokeBG.png)no-repeat;
   padding: 85px 0 75px;
   margin-top: -20px;
 }
@@ -790,7 +788,8 @@ a {
 
 .offer {
   padding: 75px 0;
-  background: url(../img/devices-bg.jpg) center center no-repeat;
+  background: url(../img/devices-bg.jpg) fixed center center no-repeat;
+  background-size: cover;
   color: #f3f3f3;
 }
 
@@ -1124,7 +1123,7 @@ a {
 }
 
 .devices {
-  background: url(../img/devices.jpg) top center no-repeat;
+  background: url(../img/devices.jpg) fixed top center no-repeat;
   background-size: cover;
   padding: 75px 0;
 }
@@ -1371,7 +1370,7 @@ a {
 
 .quiz {
   padding: 75px 0;
-  background: url(../img/background.png) center top no-repeat;
+  background: url(../img/background.png) fixed center top no-repeat;
   background-size: cover;
 }
 
@@ -1711,7 +1710,7 @@ a {
 
 
 .spending {
-  background: url(../img/bgCalc.png) center top no-repeat;
+  background: url(../img/bgCalc.png) fixed center top no-repeat;
   background-size: cover;
   padding: 75px 0;
 }
@@ -1754,7 +1753,7 @@ a {
 
 .garant {
   padding: 75px 0;
-  background: url(../img/IMG_20190410_130733.png) center top no-repeat;
+  background: url(../img/IMG_20190410_130733.png) fixed center top no-repeat;
   background-size: cover;
 }
 
@@ -2362,7 +2361,7 @@ a {
   }
 
   .header {
-
+    background-position: top 0 left 70%;
     padding-bottom: 60px;
   }
 
