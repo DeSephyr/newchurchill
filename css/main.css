@@ -2981,8 +2981,8 @@ a {
   }
 
   .comments-card__avatar {
-    margin: 0 auto;
     padding-left: 12px;
+    margin: 0 auto;
   }
 
   .comments-card__social {
