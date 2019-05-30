@@ -21,6 +21,13 @@
 }
 
 
+.smart-basket__remove-item:hover,
+.smart-basket__add-item:hover,
+.smart-basket__product-delete:hover
+ {
+background-color: #0b561766;
+}
+
 
 .smart-basket_active {
     transition: .8s;
@@ -41,6 +48,7 @@
 }
 
 .smart-basket__form {
+    color: #383127;
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -499,8 +507,9 @@
 }
 
 .smart-basket__input-wrapper_error {
-    box-shadow: inset -500px 0 0 0 #e94e3c
-}
+    box-shadow: inset -500px 0 0 0 #e94e3c;
+    border: 1px solid #e94e3c;
+} 
 
 .smart-basket__user-input {
     width: 100%;
