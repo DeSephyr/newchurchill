@@ -2495,6 +2495,10 @@ a {
     padding-bottom: 8%;
   }
 
+
+  .offer {
+    background: url(../img/devices-bg.jpg) fixed center center no-repeat;
+  }
   .advantages {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -2827,6 +2831,9 @@ a {
     max-width: 340px;
   }
   
+  .devices {
+    background: url(../img/devices.jpg) fixed top center no-repeat;
+  }
  
 
   .devices-card__img {
