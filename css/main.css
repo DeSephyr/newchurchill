@@ -491,6 +491,8 @@ a {
   top: 6px;
 }
 
+
+
 .btn {
   box-sizing: border-box;
   background: #339c44;
@@ -934,7 +936,7 @@ a {
 .reasons {
   padding: 100px;
   position: relative;
-  background: url(../img/benifit-bg.png) center center no-repeat;
+  background: url(../img/benifit-bg-min.png) center center no-repeat;
 }
 
 .reasons-wrap {
@@ -1002,9 +1004,9 @@ a {
 }
 
 .reason-card:hover .reason-card-wrap {
-  -webkit-transform: scale(0.85);
-  -ms-transform: scale(0.85);
-  transform: scale(0.85);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .simple {
@@ -1173,7 +1175,7 @@ a {
 }
 
 .devices-slider {
-  margin-top: 70px;
+  margin-top: 25px;
 }
 
 .devices-slider-item {
@@ -1372,7 +1374,7 @@ a {
 
 .quiz {
   padding: 75px 0;
-  background: url(../img/background.png) fixed center top no-repeat;
+  background: url(../img/background-min.png) fixed center top no-repeat;
   background-size: cover;
 }
 
@@ -1587,6 +1589,8 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 25px;
+  text-align: center;
+  
 }
 
 .comments-card__avatar {
@@ -1599,6 +1603,10 @@ a {
   flex-basis: 75%;
   line-height: 20px;
   letter-spacing: 0.4px;
+}
+
+.comments-card__review a {
+  cursor: pointer;
 }
 
 .comments-card__like {
@@ -1626,6 +1634,7 @@ a {
 
 .comments-card__social:hover {
   background: #1f6bb6;
+  filter: brightness(80%);
 }
 
 .comments-card__social-item {
@@ -1712,7 +1721,7 @@ a {
 
 
 .spending {
-  background: url(../img/bgCalc.png) fixed center top no-repeat;
+  background: url(../img/bgCalc-min.png) fixed center top no-repeat;
   background-size: cover;
   padding: 75px 0;
 }
@@ -1755,7 +1764,7 @@ a {
 
 .garant {
   padding: 75px 0;
-  background: url(../img/garant-bg.png) fixed center top no-repeat;
+  background: url(../img/garant-bg-min.png) fixed center top no-repeat;
   background-size: cover;
 }
 
@@ -1937,6 +1946,7 @@ a {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  margin-top: -30px;
 }
 
 .footer__icon {
@@ -2059,6 +2069,9 @@ a {
   font-size: 2.3vh;
   text-transform: uppercase;
   padding-top: 20px;
+}
+#no18 {
+  margin-bottom: 80px;
 }
 
 .request-popup__description {
@@ -2349,6 +2362,12 @@ a {
   display: block;
 }
 
+.legal {
+margin: 0 auto;
+padding-left: 30px;
+margin-top: -15px;
+}
+
 @media screen and (max-width: 768px) {
   .section-title__title {
     font-size: 23px;
@@ -2382,6 +2401,7 @@ a {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     flex-direction: column;
+   
   }
 
   .navbar__btn {
@@ -2404,7 +2424,7 @@ a {
   }
 
   .navbar__nav {
-    padding: 60px 10px;
+    padding: 25px 10px;
   }
 
   .navbar__nav {
@@ -2429,6 +2449,7 @@ a {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
+  
   }
 
   .navbar-menu {
@@ -2453,7 +2474,9 @@ a {
     padding: 10px 0;
   }
 
-  .navbar-menu__item-link {
+  .navbar-menu__item-link 
+  {
+    border: none;
     padding: 0;
   }
 
@@ -2470,10 +2493,11 @@ a {
   }
 
   .navbar-basket {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     order: 1;
+    width: 11em;
   }
 
   .navbar-basket__btn {
@@ -2546,7 +2570,10 @@ a {
 
   .navbar__hidden:checked~.navbar__nav {
     right: 0;
+    width: 100%;
   }
+
+
 
   .btn {
     font-size: 12px;
@@ -2643,7 +2670,7 @@ a {
     margin-left: -70px;
     margin-right: 15px;
     max-width: 200%;
-    
+    height: 100%;
   }
 
   .addiction__img {
@@ -2973,6 +3000,7 @@ a {
   .comments-card__title {
     margin-bottom: 20px;
     margin-top: 10px;
+    
   }
 
   .comments-card__title {
@@ -3095,6 +3123,7 @@ a {
     -webkit-flex-direction: column;
     flex-direction: column;
     padding-bottom: 6%;
+    
   }
 
   .footer__icon {

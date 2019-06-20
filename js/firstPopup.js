@@ -8,7 +8,7 @@
         function getWindow(){
           $('.modalWindow').arcticmodal({
             closeOnOverlayClick: false,
-            closeOnEsc: true
+            closeOnEsc: false
           });
         };
  

@@ -71,9 +71,7 @@ $(document).ready(function () {
 			mainClass: 'mfp-fade'
 		}
 	});
-	$('.navbar-basket').click(function () {
-		$('#hmt').trigger('click');
-	});
+
 
 
 	$('#btn_result').click(function () {
@@ -204,7 +202,7 @@ $(document).ready(function () {
 				$('#result-calc8').css('display', 'none');
 				$('#result-calc9').css('display', 'none');
 			}
-			if (value == "4" && value1 == "5") {
+			if (value == "3" && value1 == "5") {
 				$('#result-calc8').fadeIn();
 				$('#result-calc8').css('display', 'flex');
 				$('#result-calc7').css('display', 'none');
@@ -229,7 +227,7 @@ $(document).ready(function () {
 				$('#result-calc1').css('display', 'none');
 
 				$('.btn_sale').click(function () {
-					$('#result-calc9').css('display', 'none');
+					$('#result-calc9').fadeOut(200);
 					$('#result-calc8').css('display', 'none');
 					$('#result-calc7').css('display', 'none');
 					$('#result-calc6').css('display', 'none');
@@ -256,11 +254,28 @@ $(document).ready(function () {
 		
 	})
 
-	//parallax
+	//Анимация
 
+	$('.advantage-card').hover(function(){
+		$('.advantage-card').removeClass('animated', 'pulse')	
+	}, function(){
+		$('.advantage-card').addClass('animated', 'pulse')
+	})
+
+	$('.shop-wrap').hover(function(){
+		$('.shop-wrap').removeClass('animated', 'pulse')	
+	}, function(){
+		$('.shop-wrap').addClass('animated', 'pulse')
+	})
+
+	// Закрытие меню-гамбургера
+	$('#hmt').click(function(){
+		if ($('#hmt').is(':checked')) {
+			document.body.style.overflow = 'hidden';
+		}else{
+			document.body.style.overflow = 'visible';
+		}
+	})
 	
-
-
-
-
+	
 });
